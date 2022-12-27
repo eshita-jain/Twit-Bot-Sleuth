@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.108.0">
+        <title>Detect Bot Account</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+
+          .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+        </style>
+    <!-- Custom styles for this template -->
+    <link href="static/pricing.css" rel="stylesheet">
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check" viewBox="0 0 16 16">
+                <title>Check</title>
+                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+            </symbol>
+        </svg>
+
+        <div class="container py-3">
+            <!--  Header Section  -->
+            <header>
+                <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+                        <span class="fs-4">Detect Bot Account</span>
+                    </a>
+                </div>
+
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4 fw-normal">Detect Bot Account</h1>
+                    <p class="fs-5 text-muted">By entering a Twitter account name or tweet url, check the similarity rate of that account to a bot account.</p>
+                </div>
+            </header>
+            <!-- End Header Section  -->
+
+            <main>
+                <!-- Form Section  -->
+                <form method="POST" action="/">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <!-- Tweet URL Input  -->
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon3">Tweet URL</span>
+                                            {% if data["url"] != "" %}
+                                                <input type="text" class="form-control" name="url" value="{{ data["url"] }}" id="basic-url" aria-describedby="basic-addon3">
+                                            {% else %}
+                                                <input type="text" class="form-control" name="url" id="basic-url" aria-describedby="basic-addon3">
+                                            {% endif %}
+                                        </div>
+                                        <div class="form-text mt-3" style="margin-left: 1em;"> Check with url <b>Or</b> username</div>
+                                    </div>
+                                </div>
+                                <!-- End Tweet URL Input  -->
+
+                                <!--  User Name Input -->
+                                <div class="col-8">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                            {% if data["user_name"] != "" %}
+                                                <input type="text" class="form-control" name="username"  value="{{ data["user_name"] }}" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                            {% else %}
+                                                <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                <!-- End User Name Input -->
+
+                                <!-- Form Submit -->
+                                <div class="col-4">
+                                    <button type="submit" name="action" value="check"  class="btn btn-primary">Check User</button>
+                                </div>
+                                <!-- Form Submit -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- End Form Section -->
+
+                <!-- Detection Results -->
+                <div class="row mt-5">
+                    <!--  Form Input Check -->
+                    {% if not data["is_valid_user"] and data["is_valid_user"] !="" %}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            This Username or URL is invalid!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <!-- EndForm Input Check -->
+
+                    <!-- Show Detection Result -->
+                    {% elif data["is_valid_user"] %}
+                        <div class="col-12">
+                            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center d-flex justify-content-center">
+                                <!-- Profile Information's -->
+                                <div class="col ">
+                                    <div class="card mb-4 rounded-3 shadow-sm border-{{ data["border"] }}" style="min-height: 400px" >
+                                        <div class="card-header py-3 text-bg-{{ data["border"] }} border-{{ data["border"] }}">
+                                            <h4 class="my-0 fw-normal">{{ data["user"].displayname }}</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="{{ data["user"].profileImageUrl }}" style="border-radius: 50%" alt="Avatar">
+                                            <ul class="list-unstyled mt-3 mb-4">
+                                                <li><b>Username:</b> @{{ data["user"].username }}</li>
+                                                <li><b>Join Date:</b>{{ data["user"].created }} </li>
+                                                <li><b>Description:</b> {{ data["user"].rawDescription }}</li>
+                                            </ul>
+                                            <a href="https://twitter.com/{{ data["user"].username }}">
+                                                <button type="button" class="w-100 btn btn-lg btn-{{ data["border"] }}">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                                    </svg>
+                                                    Contact
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- EndProfile Information's -->
+
+                                <!-- Bot Rate Information's -->
+                                <div class="col">
+                                    <div class="card mb-4 rounded-3 shadow-sm ">
+                                        <div class="card-header py-3">
+                                            <h4 class="my-0 fw-normal">Bot Rate</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <h1 class="card-title pricing-card-title text-{{ data["border"] }}">%{{ data["proba"] }}<small class="text-muted fw-light">/Like Bot</small></h1>
+                                            <script src="//cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+                                            <canvas data-type="linear-gauge"
+                                                    data-width="120"
+                                                    data-height="245"
+                                                    data-units="°C"
+                                                    data-min-value="0"
+                                                    data-start-angle="90"
+                                                    data-ticks-angle="180"
+                                                    data-value-box="false"
+                                                    data-max-value="100"
+                                                    data-major-ticks="0,20,40,60,80,100"
+                                                    data-minor-ticks="2"
+                                                    data-stroke-ticks="true"
+                                                    data-highlights='[ {"from": 70, "to": 100, "color": "rgba(200, 50, 50, .75)"} ]'
+                                                    data-color-plate="#fff"
+                                                    data-border-shadow-width="0"
+                                                    data-borders="false"
+                                                    data-needle-type="arrow"
+                                                    data-needle-width="4"
+                                                    data-needle-circle-size="7"
+                                                    data-needle-circle-outer="true"
+                                                    data-needle-circle-inner="false"
+                                                    data-animation-duration="3000"
+                                                    data-animation-rule="linear"
+                                                    data-bar-width="10"
+                                                    data-value="{{ data["proba"] }}"
+                                                  >
+                                            </canvas>
+                                            <script>
+                                                var gauge = new LinearGauge({
+                                                     renderTo: 'canvas-id',
+                                                     animationDuration: 1500,
+                                                     animationRule: "linear"
+                                                }).draw();
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Bot Rate Information's -->
+                            </div>
+
+                            <!-- Benchmark User and Average Bot Profile Statistics -->
+                            <div class="col-12 d-flex justify-content-center">
+                                <h2>User Statistics</h2>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Default Profile</th>
+                                                <th>Default Profile Image</th>
+                                                <th>Favourites Count</th>
+                                                <th>Followers Count</th>
+                                                <th>Friends Count</th>
+                                                <th>Location</th>
+                                                <th>Verified</th>
+                                                <th>AVG Tweet Per Day</th>
+                                                <th>Account Age by Day</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">User</th>
+                                                <td>{% if data["features"]["default_profile"] == 0%} Yes {% else %} No {% endif %}</td>
+                                                <td>{% if data["features"]["default_profile_image"] == 0%} Yes {% else %} No {% endif %}</td>
+                                                <td>{{ data["features"]["favourites_count"] }}</td>
+                                                <td>{{ data["features"]["followers_count"] }}</td>
+                                                <td>{{ data["features"]["friends_count"] }}</td>
+                                                <td>{% if data["features"]["geo_enabled"] == 0%} No {% else %} Yes {% endif %}</td>
+                                                <td>{% if data["features"]["verified"] == 0%} No {% else %} Yes {% endif %}</td>
+                                                <td>{{data["features"]["average_tweets_per_day"]}}</td>
+                                                <td>{{ data["features"]["account_age_days"] }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Average Bot User</th>
+                                                <td>{% if data["bot_user_avg"]["default_profile"] == 0%} Yes {% else %} No {% endif %}</td>
+                                                <td>{% if data["bot_user_avg"]["default_profile_image"] == 0%} Yes {% else %} No {% endif %}</td>
+                                                <td>{{ data["bot_user_avg"]["favourites_count"] }}</td>
+                                                <td>{{ data["bot_user_avg"]["followers_count"] }}</td>
+                                                <td>{{ data["bot_user_avg"]["friends_count"] }}</td>
+                                                <td>{% if data["bot_user_avg"]["geo_enabled"] == 0%} No {% else %} Yes {% endif %}</td>
+                                                <td>{% if data["bot_user_avg"]["verified"] == 0%} No {% else %} Yes {% endif %}</td>
+                                                <td>{{data["bot_user_avg"]["average_tweets_per_day"]}}</td>
+                                                <td>{{ data["bot_user_avg"]["account_age_days"] }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- End Benchmark User and Average Bot Profile Statistics -->
+                        </div>
+                    {% endif %}
+                    <!-- End Show Detection Result -->
+                </div>
+            </main>
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+
+            </footer>
+        </div>
+    </body>
+</html>
