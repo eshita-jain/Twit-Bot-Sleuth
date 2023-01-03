@@ -1,22 +1,18 @@
 from flask import Flask, render_template, request
+import numpy
 import pickle
 import pandas as pd
 from scraper import *
 from fuctions import *
 app = Flask(__name__)
 
-
-# Loads the machine learning classifier into memory, which is saved in the folder named "pickle_variables".
 file = open("model/model.pickle", "rb")
 clf = pickle.load(file)
 
-# Returns the average statistics of bot users in the dataset.
 bot_avg = get_bot_avg_statistic()
 
 @app.route('/', methods=['GET', 'POST'])
 def home_page():  # Home Page
-
-    # this dictionary contains the values to be sent to the user under all circumstances.
     data = {
         "user_name": "",
         "is_valid_user": "",
