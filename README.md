@@ -22,13 +22,13 @@ To run the Twitter bot detection application on your local machine, follow these
 1. Clone this repository to your local machine.
 2. Make sure you have Python installed (Python 3.6 or later is recommended).
 3. Install the required dependencies by running the following command:
-   `pip install Flask pandas numpy'
+   ``` pip install Flask pandas numpy ```
 
 1. Download the pre-trained machine learning model file ('model.pickle') and place it inside the 'model' directory.
 2. Ensure you have access to Twitter's API by obtaining the necessary credentials (consumer key, consumer secret, access token, and access token secret).
 3. Open the 'scraper.py' file and update the Twitter API credentials to enable data scraping from Twitter. This is required to fetch user information from Twitter based on the provided tweet URLs or usernames.
 4. Run the Flask application using the following command:
- '''python app.py
+ ``` python app.py ```
 
 The application should now be running locally. Open your web browser and navigate to 'http://127.0.0.1:8000' to access the web interface.
 
@@ -41,3 +41,18 @@ The application should now be running locally. Open your web browser and navigat
 
 
 * Please note that the accuracy of bot detection depends on the quality and diversity of the training data used to train the machine learning model. For the best results, ensure the model.pickle file is up-to-date and trained on a diverse dataset.
+
+## Results
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/0ed05ab0-c980-4f43-8de5-8318267aeb08)
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/3e8e5e21-589a-4694-b696-36bc9d54fdac)
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/1eb1838e-faca-4eff-9909-fd92c9fb5b59)
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/41ee0356-bc59-4935-bbff-07d8574fcc8b)
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/85e01e0d-9219-4472-bfad-dc7e98cdfda8)
+
+
+
