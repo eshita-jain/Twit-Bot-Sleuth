@@ -28,7 +28,7 @@ To run the Twitter bot detection application on your local machine, follow these
 2. Ensure you have access to Twitter's API by obtaining the necessary credentials (consumer key, consumer secret, access token, and access token secret).
 3. Open the 'scraper.py' file and update the Twitter API credentials to enable data scraping from Twitter. This is required to fetch user information from Twitter based on the provided tweet URLs or usernames.
 4. Run the Flask application using the following command:
- 'python app.py'
+ '''python app.py
 
 The application should now be running locally. Open your web browser and navigate to 'http://127.0.0.1:8000' to access the web interface.
 
