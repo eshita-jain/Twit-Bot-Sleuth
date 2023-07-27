@@ -51,15 +51,15 @@ The application should now be running locally. Open your web browser and navigat
 
 The data sent to the frontend is processed by the jinja template. As a result of classification, user information is presented first. Then the Bot rate is given as a percentage. This value is between 0 and 100. It increases and decreases with slices of 10. Coloring changes depending on the possibility of the user being a bot. Between 0 and 30 it is Blue, between 40 and 60 Yellow, between 70 and 100 it is red.
 
-![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/0ed05ab0-c980-4f43-8de5-8318267aeb08)
+* ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/0ed05ab0-c980-4f43-8de5-8318267aeb08)
 
-![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/3e8e5e21-589a-4694-b696-36bc9d54fdac)
+* ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/3e8e5e21-589a-4694-b696-36bc9d54fdac)
 
-![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/1eb1838e-faca-4eff-9909-fd92c9fb5b59)
+* ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/1eb1838e-faca-4eff-9909-fd92c9fb5b59)
 
-![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/41ee0356-bc59-4935-bbff-07d8574fcc8b)
+* ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/41ee0356-bc59-4935-bbff-07d8574fcc8b)
 
-![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/85e01e0d-9219-4472-bfad-dc7e98cdfda8)
+* ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/85e01e0d-9219-4472-bfad-dc7e98cdfda8)
 
 ## Contributing
 Contributions to TwitBotSleuth are welcome! If you find any issues or have ideas for improvements, feel free to submit a pull request or open an issue on the GitHub repository.
