@@ -42,7 +42,14 @@ The application should now be running locally. Open your web browser and navigat
 
 * Please note that the accuracy of bot detection depends on the quality and diversity of the training data used to train the machine learning model. For the best results, ensure the model.pickle file is up-to-date and trained on a diverse dataset.
 
+
+## Web Interface
+
+![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/3157e4f8-0034-4718-bcf8-68a3a2f6bb48)
+
 ## Results
+
+The data sent to the frontend is processed by the jinja template. As a result of classification, user information is presented first. Then the Bot rate is given as a percentage. This value is between 0 and 100. It increases and decreases with slices of 10. Coloring changes depending on the possibility of the user being a bot. Between 0 and 30 it is Blue, between 40 and 60 Yellow, between 70 and 100 it is red.
 
 ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/0ed05ab0-c980-4f43-8de5-8318267aeb08)
 
