@@ -16,7 +16,7 @@ The Twitter bot detection web app employs a machine learning model to analyze va
 * Average Tweets Per Day: The average number of tweets posted per day by the user.
 * Account Age (Days): The age of the Twitter account in days.
 
-### Getting Started
+## Getting Started
 To run the Twitter bot detection application on your local machine, follow these steps:
 
 1. Clone this repository to your local machine.
@@ -54,9 +54,9 @@ The application should now be running locally. Open your web browser and navigat
 
 ![image](https://github.com/eshita-jain/TwitBotSleuth/assets/80577092/85e01e0d-9219-4472-bfad-dc7e98cdfda8)
 
-### Contributing
+## Contributing
 Contributions to TwitBotSleuth are welcome! If you find any issues or have ideas for improvements, feel free to submit a pull request or open an issue on the GitHub repository.
 
-### Disclaimer
+## Disclaimer
 TwitBotSleuth's classification accuracy is approximately 90%, but it is not infallible. The results are based on statistical predictions, and false positives or false negatives may occur. Always use the tool in conjunction with human judgment and do not solely rely on its outcomes.
 
