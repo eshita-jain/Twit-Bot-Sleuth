@@ -1,4 +1,4 @@
-# Twit-Bot-Sleuth : 
+# TwitBotSleuth: Twitter Bot Detection 
 
 The primary objective of TwitBotSleuth is to tackle the increasing presence of bot accounts on social media platforms, particularly Twitter. These automated accounts can be misleading, spammy, or even malicious, making it essential to identify and differentiate them from genuine human users. TwitBotSleuth comes to the rescue by providing an efficient and accurate way to determine whether a Twitter account belongs to a bot or a real person. by leveraging machine learning and web scraping techniques. With an accuracy of 90%, this tool can effectively identify and flag suspicious accounts.
 
